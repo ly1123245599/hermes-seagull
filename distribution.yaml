@@ -1,0 +1,17 @@
+name: seagull
+version: 2.0.0
+description: >-
+  Seagull (海鸥) — Hermes profile for CTF, reverse engineering, pentest, exploit
+  development, and license-security research. Ships SOUL.md + AGENTS.md, five
+  domain skills, and the seagull-armor-break plugin (Hermes >= 0.21).
+hermes_requires: ">=0.21.0"
+author: ly1123245599
+homepage: https://github.com/ly1123245599/hermes-seagull
+license: MIT
+distribution_owned:
+  - SOUL.md
+  - AGENTS.md
+  - config.yaml
+  - skills
+  - plugins
+  - .env.EXAMPLE

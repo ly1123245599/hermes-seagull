@@ -1,0 +1,13 @@
+# Minimal distro config. `hermes profile update` preserves this file by default
+# so a user's model/provider keys are not clobbered after first install.
+#
+# Fresh install MUST enable the armor-break plugin (user plugins are opt-in).
+# Bundled Hermes backends/platforms auto-load and are not listed here.
+
+plugins:
+  enabled:
+    - seagull-armor-break
+
+# Stamp current Hermes schema so a fresh install is not "v0 → v49" in doctor.
+# Bump this when Hermes DEFAULT_CONFIG._config_version moves (currently 49 on 0.21.5).
+_config_version: 49

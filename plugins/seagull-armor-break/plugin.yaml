@@ -1,0 +1,23 @@
+name: seagull-armor-break
+version: 2.0.0
+description: >-
+  Seagull session overlay for Hermes >= 0.21. Registers a cache-stable system
+  prompt section and intercepts bare greeting/skill triggers. Does not register
+  fail-closed tool-call observers.
+author: ly1123245599
+license: MIT
+homepage: https://github.com/ly1123245599/hermes-seagull
+kind: standalone
+requires_hermes: ">=0.21.0"
+platforms:
+  - linux
+  - macos
+  - windows
+tags:
+  - seagull
+  - profile
+  - ctf
+  - red-team
+provides_hooks:
+  - pre_llm_call
+  - transform_llm_output

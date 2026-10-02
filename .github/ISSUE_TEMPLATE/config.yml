@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Hermes Agent docs
+    url: https://hermes-agent.nousresearch.com/docs/user-guide/profile-distributions
+    about: Official profile-distribution contract
+  - name: Upstream persona (laoshu666)
+    url: https://github.com/laoshu666/hermes-seagull
+    about: Original Seagull personality repo (not this fork's install path)

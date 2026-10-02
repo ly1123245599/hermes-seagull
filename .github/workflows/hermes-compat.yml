@@ -1,0 +1,17 @@
+name: hermes-compat
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+jobs:
+  valid-hooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Declared hooks must still be in Hermes VALID_HOOKS
+        run: python scripts/check_hermes_hooks.py --strict

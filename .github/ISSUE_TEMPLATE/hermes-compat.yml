@@ -1,0 +1,17 @@
+name: Hermes compatibility
+description: 新 Hermes 版本改了 VALID_HOOKS / profile install / plugin 加载
+labels: ["compat"]
+body:
+  - type: input
+    id: hermes
+    attributes:
+      label: New Hermes version
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: doctor 输出、unknown hook 警告、install 报错、CI hermes-compat 失败日志
+    validations:
+      required: true

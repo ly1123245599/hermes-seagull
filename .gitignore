@@ -1,0 +1,55 @@
+# Secrets — never ship a live profile home
+.env
+.env.*
+!.env.EXAMPLE
+auth.json
+auth.lock
+*.pem
+*.key
+
+# Hermes runtime (if someone clones into a live profile by mistake)
+state.db
+state.db-*
+sessions/
+memories/
+cache/
+logs/
+backups/
+workspace/
+home/
+runtime/
+audio_cache/
+image_cache/
+pairing/
+vault/
+telemetry/
+projects.db
+models_dev_cache.json
+models_dev_cache.etag
+provider_models_cache.json
+.skills_prompt_snapshot.json
+.source-checks/
+.plugin-update-checks/
+.curator_backups/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local overrides
+config.local.yaml
+*.local.yaml
+.secrets/
